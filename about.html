@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koda | About</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="about-page">
+  <header class="top-nav">
+    <img src="images/Koda Digital Logo.png" alt="Koda Logo" class="site-logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about" class="about-wrapper" data-aos="fade-up">
+      <div class="about-logo">
+        <img src="images/KodaCrossed.png" alt="Koda Logo" />
+      </div>
+
+      <div class="about-content">
+      <div class="about-title-wrapper">
+      <div class="v-line"></div>
+      <h2 class="website-type-title">About Me</h2>
+      <div class="v-line"></div>
+      </div>
+
+        <p id="about-description">
+          Hey, I'm Dakota — a soon to be veteran transitioning into the tech world with a mission to build clean and efficient websites.
+          After years of service, I’m now channeling that drive into front-end development. My focus is crafting fast, responsive sites
+          that not only look sharp but actually make life easier. Tech is how I plan to keep serving — this time, by helping people and businesses show up better online.
+        </p>
+
+        
+        <h3>What I Do:</h3>
+        <ul class="about-skills">
+          <li>💡 Build fast, mobile-first websites</li>
+          <li>⚙️ Custom HTML/CSS layouts</li>
+          <li>🎨 Design simple, clean UIs</li>
+          <li>📦 Deliver optimized performance</li>
+        </ul>
+
+        <p>Whether you need a landing page, portfolio, or a polished site for your brand — I'm here to help bring it to life.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dakota Smith. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+  <script>
+  function fadeInWords() {
+    const paragraph = document.getElementById('about-description');
+    const text = paragraph.innerText;
+    const words = text.split(' ');
+
+    paragraph.innerHTML = ''; // Clear original text
+    paragraph.classList.add('fade-word');
+
+    words.forEach((word, index) => {
+      const span = document.createElement('span');
+      span.textContent = word + ' ';
+      span.style.animationDelay = `${index * 0.1}s`;
+      paragraph.appendChild(span);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    fadeInWords();
+  });
+</script>
+
+</body>
+</html>

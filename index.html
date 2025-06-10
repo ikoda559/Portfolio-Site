@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Practice Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koda Digital</title>
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
-<body>
-  <header>
-    <h1>Hey, I'm Koda — I build clean, fast websites.</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<body class="home-page">  
+      <header class="top-nav">
+  <img src="images/Koda Digital Logo.png" alt="Koda Logo" class="site-logo" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+  
+<main>
+<section class="hero">
+  <div class="hero-inner">
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm a web designer focused on building sleek, responsive websites for individuals and businesses. Whether you're a startup or just need a landing page, I got you.</p>
-  </section>
+    <div class="hero-img-wrapper">
+      <img src="images/Koda.png" class="hero-img" alt="Koda">
+    </div>
 
-  <section id="services">
-    <h2>My Services</h2>
-    <ul>
-      <li>Custom Website Design (HTML/CSS)</li>
-      <li>Responsive Fixes for Mobile</li>
-      <li>Landing Pages for Products or Brands</li>
-      <li>Website Speed Optimization</li>
-    </ul>
-  </section>
+    <!-- Move this OUTSIDE the hero-img-wrapper -->
+  <div class="code-bg-text">
+      .{}       &lt;html&gt;<br>
+    &nbsp;&nbsp;height: 184px;<br>
+    &nbsp;&nbsp;color: #000;<br>
+    &nbsp;&nbsp;font-family:;<br>
+    &nbsp;&nbsp;.   CSS3 &nbsp; HTML5 &nbsp;<br>
+    &nbsp;&nbsp;UX_UI.design();<br>
+    &nbsp;&nbsp;jQuery.init();<br>
+    &nbsp;&nbsp;[responsive=true]<br>
+    &lt;.    /html&gt;
+  </div>
 
-  <section id="portfolio">
-  <h2>Portfolio</h2>
-  <p>Here are a few sample projects I've worked on. (More coming soon!)</p>
-  <ul>
-    <li><strong>Practice Portfolio:</strong> This very site!</li>
-    <li><strong>Product Landing Page:</strong> A sleek single-page layout for showcasing a product.</li>
-    <li><strong>Blog Template:</strong> A minimalist blog layout with mobile responsiveness.</li>
-  </ul>
+
+    <div class="hero-text">
+      <h1>&lt;koda&gt;</h1>
+      <p>I design and build fast, modern websites that actually feel good to use. Clean code, mobile-first layouts, and sharp UI — that’s my thing. If it looks smooth and runs better, I made it that way.</p>
+    </div>
+
+  </div>
 </section>
 
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <label>Name:</label><br>
-      <input type="text" name="name" required><br>
-      <label>Email:</label><br>
-      <input type="email" name="email" required><br>
-      <label>Message:</label><br>
-      <textarea name="message" required></textarea><br>
-      <button type="submit">Send</button>
-    </form>
-  </section>
 
-<footer>
-  <p>&copy; 2025 Dakota Smith. All rights reserved.</p>
-</footer>
+</main>
+
+  <footer>
+    <p>&copy; 2025 Dakota Smith. All rights reserved.</p>
+  </footer>
 </body>
 </html>

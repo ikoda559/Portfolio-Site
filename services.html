@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koda | Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <header class="top-nav">
+    <img src="images/Koda Digital Logo.png" alt="Koda Logo" class="site-logo" />
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+  <section class="services-wrapper" data-aos="fade-up">
+  <h2>My Services</h2>
+
+<div class="service-list">
+  <div class="service-item" onclick="toggleService('service1')">
+    <span class="emoji">🧩</span>
+    <div id="service1" class="service-desc hidden">Custom Website Design using HTML & CSS, tailored to your brand.</div>
+  </div>
+  <div class="service-item" onclick="toggleService('service2')">
+    <span class="emoji">📱</span>
+    <div id="service2" class="service-desc hidden">Responsive fixes to make your site look great on all devices.</div>
+  </div>
+  <div class="service-item" onclick="toggleService('service3')">
+    <span class="emoji">🚀</span>
+    <div id="service3" class="service-desc hidden">Landing pages that convert clicks into customers.</div>
+  </div>
+  <div class="service-item" onclick="toggleService('service4')">
+    <span class="emoji">⚙️</span>
+    <div id="service4" class="service-desc hidden">Speed optimization for faster load times and better SEO.</div>
+  </div>
+</div>
+
+  </section>
+
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Dakota Smith. All rights reserved.</p>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+<script>
+  function toggleService(id) {
+    const el = document.getElementById(id);
+    el.classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>
